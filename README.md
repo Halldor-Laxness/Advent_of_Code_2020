@@ -9,5 +9,7 @@ This repo implements [Advent of Code 2020](https://adventofcode.com/), current b
 | Day04: Passport Processing | [day 04](day04/day04.py) |
 | Day05: Binary Boarding     | [day 05](day05/day05.py) |
 
-
+- 12点以后就开冲
+- 卷还是不卷这是个问题
+- 有时间为什么不做算法题
 
