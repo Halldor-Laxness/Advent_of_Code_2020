@@ -6,7 +6,8 @@ This repo implements [Advent of Code 2020](https://adventofcode.com/), current b
 | Day01: Report Repair       | [day 01](day01/day01.py) |
 | Day02: Password Philosophy | [day 02](day02/day02.py) |
 | Day03: Toboggan Trajectory | [day 03](day03/day03.py) |
-| Day 4: Passport Processing | [day 04](day04/day04.py) |
+| Day04: Passport Processing | [day 04](day04/day04.py) |
+| Day05: Binary Boarding     | [day 05](day05/day05.py) |
 
 
 
