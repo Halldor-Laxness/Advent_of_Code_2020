@@ -8,7 +8,7 @@ This repo implements [Advent of Code 2020](https://adventofcode.com/), current b
 | Day03: Toboggan Trajectory | [day 03](day03/day03.py) |
 | Day04: Passport Processing | [day 04](day04/day04.py) |
 | Day05: Binary Boarding     | [day 05](day05/day05.py) |
-| Day06                      | [day 06](day06/day06.py) |
+| Day06: Custom Custom       | [day 06](day06/day06.py) |
 
 - 12点以后就开冲
 - 卷还是不卷这是个问题
