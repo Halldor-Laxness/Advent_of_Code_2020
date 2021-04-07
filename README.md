@@ -10,9 +10,11 @@ This repo implements [Advent of Code 2020](https://adventofcode.com/), current b
 | Day05: Binary Boarding     | [day 05](day05/day05.py) |
 | Day06: Custom Custom       | [day 06](day06/day06.py) |
 | Day07: Handy Haversacks    | [day 07](day07/day07.py) |
+| Day08: Handheld Halting    | [day 08](day08/day08.py) |
 
 - 12点以后就开冲
 - 卷还是不卷这是个问题
 - 有时间为什么不做算法题
 - 今天Java模拟题正确率33% 把爷整笑了
+- [Halldor Advent](https://github.com/Halldor-Laxness/Advent_of_Code_2020) 惨遭滑铁卢
 
