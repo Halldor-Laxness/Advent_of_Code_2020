@@ -16,7 +16,7 @@ for line in lines:
 
 sum_counts += len(question_count)
 
-print(f'the sum of counts is: {sum_counts}')
+print(f"the sum of counts is: {sum_counts}")
 
 # part two
 question_list = np.zeros(26)
@@ -35,4 +35,4 @@ for line in lines:
 if max(question_list) == num_group:
     sum_counts += (question_list == max(question_list)).sum()
 
-print(f'the sum of counts is: {sum_counts}')
+print(f"the sum of counts is: {sum_counts}")
