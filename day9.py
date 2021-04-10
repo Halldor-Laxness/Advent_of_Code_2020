@@ -4,29 +4,42 @@ import re
 with open("day9.in") as f:
     lines = f.read().split("\n")
 lens = len(lines)
-adapters = list(map(int, lines))
-print(f'length: {lens}')
-adapters.sort()
-start = 0
-lv_1 = 0
-lv_3 = 1
-for i in adapters:
-    if i - start == 1:
-        lv_1 += 1
-    elif i - start == 3:
-        lv_3 += 1
-    start = i
-print(adapters)
-print(lv_1, lv_3, lv_1 * lv_3)
 
-a = np.zeros((lens + 1, lens + 1))
-a[0][0] = 1
+numbers = list(map(int, lines))
 
-for i in range(1, lens + 1):
-    for j in range(lens):
-        for k in range(1, 4):
-            if j - k == -1 and adapters[j] < 4: #boundary case
-                a[i][j] += 1
-            if j - k >= 0 and adapters[j] - adapters[j-k] <= 3:
-                a[i][j] += a[i-1][j-k]
-print(a[lens][lens-1])
+
+def validation(preamble, x):
+    length = len(preamble)
+    for i in range(length):
+        for j in range(i + 1, length):
+            if preamble[i] + preamble[j] == x:
+                return True
+    return False
+
+
+preamble_size = 25
+preamble_port = numbers[:preamble_size]
+
+
+for i in range(preamble_size, len(numbers)):
+    preamble_port = numbers[i - preamble_size : i]
+    if not validation(preamble_port, numbers[i]):
+        target_number = numbers[i]
+        print("Question One is:", target_number)
+
+# part 2
+
+
+def find_value(start=0, end=2, amount=0):
+    # print(start, end, amount)
+    if amount == target_number:
+        return (start, end)
+    if amount > target_number and end - start > 2:
+        return find_value(start + 1, end, amount - numbers[start])
+    if amount < target_number and end < len(numbers):
+        return find_value(start, end + 1, amount + numbers[end])
+    return "Not Find"
+
+
+start, end = find_value(0, 2, sum(numbers[:2]))
+print("Question two answer is:", min(numbers[start:end]) + max(numbers[start:end]))
