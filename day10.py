@@ -1,7 +1,7 @@
 import numpy as np
 import re
 
-with open("day9.in") as f:
+with open("day10.in") as f:
     lines = f.read().split("\n")
 lens = len(lines)
 
