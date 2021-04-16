@@ -5,7 +5,7 @@ with open("day14.in") as f:
 
 address = {}
 values = [2 ** i for i in range(36)]
-print(values)
+
 
 point = 0
 while point < len(lines):
