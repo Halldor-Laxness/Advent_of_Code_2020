@@ -63,6 +63,7 @@ def countOccupied(data):
             if seat =='#':
                 count+=1
     return count
+
 if __name__ == "__main__":
     data = processRawData("input.txt")
     resultV1 = getFinalState(data,isChangedV1)
