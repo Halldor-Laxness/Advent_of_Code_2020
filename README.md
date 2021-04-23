@@ -19,6 +19,8 @@ This repo implements [Advent of Code 2020](https://adventofcode.com/), current b
 | Day14: Docking Data            | [day 14](day14/day14.py) |
 | Day15: Rambunctious Recitation | [day 15](day15/day15.py) |
 | Day16: Ticket Translation      | [day 16](day16/day16.py) |
+| Day17: Conway Cubes            | [day 17](day17/day17.py) |
+| Day18: Operation Order         | [day 18](day18/day18.py) |
 
 - 12点以后就开冲
 - 卷还是不卷这是个问题

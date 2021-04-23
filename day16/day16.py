@@ -3,7 +3,7 @@ from functools import reduce
 def loadData(path):
 	with open("input.txt", "r") as file:
 		data = file.read().split("\n\n")
-	return data[0].split('\n'),[int(num) for num in data[1].split('\n')[1].split(',')],[[int(num) for num in line.split(',')] for line in data[2].split('\n')[1:]]
+	return parseRules(data[0].split('\n')),[int(num) for num in data[1].split('\n')[1].split(',')],[[int(num) for num in line.split(',')] for line in data[2].split('\n')[1:]]
 
 def makeClosure(begin1, end1, begin2, end2):
 	return lambda x: ((x>=begin1 and x<= end1) or (x>=begin2 and x<=end2))
@@ -48,7 +48,6 @@ def multiplyValidDepFields(tickets,rules,myTicket):
 	return reduce((lambda x, y: x * y), [myTicket[num] for field,num in matchFields.items() if field.startswith("departure")])
 	
 if __name__ == '__main__':
-	rawRules, myTicket, nearbyTickets = loadData("input.txt")
-	rules = parseRules(rawRules)
+	rules, myTicket, nearbyTickets = loadData("input.txt")
 	print("Part 1:",sumInvalidNum(nearbyTickets,rules))
 	print("Part 2:",multiplyValidDepFields(nearbyTickets,rules,myTicket))
