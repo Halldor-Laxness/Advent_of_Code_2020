@@ -97,4 +97,3 @@ for field, value in final_index:
     if "departure" in field:
         ans *= my_ticket[value]
 print("part 2:", ans)
-
