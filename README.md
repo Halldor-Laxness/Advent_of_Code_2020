@@ -21,6 +21,7 @@ This repo implements [Advent of Code 2020](https://adventofcode.com/), current b
 | Day16: Ticket Translation      | [day 16](day16/day16.py) |
 | Day17: Conway Cubes            | [day 17](day17/day17.py) |
 | Day18: Operation Order         | [day 18](day18/day18.py) |
+| Day19: Monster Messages        | [day 19](day19/day19.py) |
 
 - 12点以后就开冲
 - 卷还是不卷这是个问题
@@ -29,4 +30,5 @@ This repo implements [Advent of Code 2020](https://adventofcode.com/), current b
 - [Halldor Advent](https://github.com/Halldor-Laxness/Advent_of_Code_2020) 惨遭滑铁卢
 - 既然忘记更新readme, 失误了
 - 我宣布day16和day4一样恶心
+- Day19 坚决抵制regex
 
